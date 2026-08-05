@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politiques et Sociétés — Livres</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+
+<header>
+    <a class="logo" href="../../catalogue/">Biblio<span>Libris</span></a>
+    <a class="back-btn" href="../../catalogue/">Retour aux catégories</a>
+</header>
+
+<div class="breadcrumb">
+    <a href="../../catalogue/">Accueil</a> |<strong>Histoire Africaine</strong>
+</div>
+
+<section class="banner">
+    <h1>Politiques Et <em>Sociétés</em></h1>
+    <p>Explorez les grandes œuvres sur les civilisations et l'histoire du continent</p>
+    <div class="book-count">6 livres disponibles</div>
+</section>
+
+<div class="section-label">Tous les livres</div>
+
+<div class="books-grid">
+
+    <div class="book-card">
+
+        <img class="book-cover" src="../../assets/images/salome-saquet.jpg" alt="Couverture de L'Afrique avant la colonisation"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="cover-placeholder" style="display:none;"><small>Couverture</small></div>
+
+        <div class="book-info">
+            <div class="book-title">Sois Jeune Et Tais Toi</div>
+            <div class="book-author">par Salomé Saqué</div>
+            <div class="book-desc">Une analyse de la précarité et de l'engagement de la génération 18-30 ans face aux crises écologiques et économiques.</div>
+            <div class="book-status dispo">Disponible</div>
+            <button class="btn-reserve"
+                onclick="openModal('Sois jeune et tais toi', 'Salomé Saqué')">
+                Réserver
+            </button>
+        </div>
+    </div>
+
+
+    <div class="book-card">
+        <img class="book-cover" src="../../assets/images/prince.jpg" alt="Couverture de Sundiata"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="cover-placeholder" style="display:none;"><small>Couverture</small></div>
+
+        <div class="book-info">
+            <div class="book-title">Le Prince</div>
+            <div class="book-author">par Nicolas Machiavel</div>
+            <div class="book-desc">Un traité classique sur la conquête et la conservation du pouvoir.</div>
+            <div class="book-status dispo">Disponible</div>
+            <button class="btn-reserve"
+                onclick="openModal('Le prince', 'Nicolas Machiavel')">
+                Réserver
+            </button>
+        </div>
+    </div>
+
+
+    <div class="book-card">
+        <img class="book-cover" src="../../assets/images/La_Construction_sociale_de_la_realite_cover_2103a1d783.jpg" alt="Couverture"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="cover-placeholder" style="display:none;"><small>Couverture</small></div>
+
+        <div class="book-info">
+            <div class="book-title">La Construction Sociale De La Réalité</div>
+            <div class="book-author">par Peter Berger et Thomas Luckmann</div>
+            <div class="book-desc">Ouvrage fondamental sur la perception du réel.</div>
+            <div class="book-status dispo">Disponible</div>
+            <button class="btn-reserve"
+                onclick="openModal('La Construction sociale de la realité', 'Peter Berger et Thomas Luckmann')">
+                Réserver
+            </button>
+        </div>
+    </div>
+
+    <div class="book-card">
+        <img class="book-cover" src="Démocratiejpg.jpg" alt="Couverture"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="cover-placeholder" style="display:none;"><small>Couverture</small></div>
+
+        <div class="book-info">
+            <div class="book-title">Les Démocratie à L'épreuve</div>
+            <div class="book-author">par Gérard Grunber, Paul M. Sniderman Nonna Mayer</div>
+            <div class="book-desc">Un ouvrage traitant des défis du populisme et de la crise de la démocratie.</div>
+            <div class="book-status dispo">Disponible</div>
+            <button class="btn-reserve" onclick="openModal('Les Démocratie à L\'épreuve', 'Gérard Grunber')">Réserver</button>
+        </div>
+    </div>
+
+
+    <div class="book-card">
+        <img class="book-cover" src="../../assets/images/Spectacle.jpg" alt="Couverture"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="cover-placeholder" style="display:none;"><small>Couverture</small></div>
+
+        <div class="book-info">
+            <div class="book-title">La Société Du Spectacle</div>
+            <div class="book-author">par Guy Debord</div>
+            <div class="book-desc">Une critique de la société de consommation et des médias.</div>
+            <div class="book-status dispo">Disponible</div>
+            <button class="btn-reserve"
+                onclick="openModal('La Societe Du Spectacle', 'Guy Debord')">
+                Réserver
+            </button>
+        </div>
+    </div>
+
+
+    <div class="book-card">
+        <img class="book-cover" src="../../assets/images/La_Civilisation_des_moeurs_cover_fb8e59ace2.jpg" alt="Couverture"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="cover-placeholder" style="display:none;"><small>Couverture</small></div>
+
+        <div class="book-info">
+            <div class="book-title">La Civilisations Des Moeurs</div>
+            <div class="book-author">par Norbert Elias</div>
+            <div class="book-desc">Un classique explorant comment la société a façonné les règles morales.</div>
+            <div class="book-status dispo">Disponible</div>
+            <button class="btn-reserve"
+                onclick="openModal('La civilisations des moeurs', 'Norbert Elias')">
+                Réserver
+            </button>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    &copy; 2025 BiblioAfrique — Tous droits réservés
+</footer>
+
+
+<div class="modal-overlay" id="modalOverlay" onclick="closeOnOverlay(event)">
+    <div class="modal" id="modalBox">
+        <button class="modal-close" onclick="closeModal()">✕</button>
+
+        <!-- Formulaire -->
+        <div id="formView">
+            <div class="modal-icon">icone de livre</div>
+            <h2>Réserver un livre</h2>
+            <div class="modal-book-title" id="modalBookTitle">—</div>
+
+            <div class="form-group">
+                <label for="inputNom">Votre nom complet</label>
+                <input type="text" id="inputNom" placeholder="Ex : Aminata Koné">
+            </div>
+
+            <div class="form-group">
+                <label for="inputTel">Téléphone</label>
+                <input type="tel" id="inputTel" placeholder="+226 XX XX XX XX">
+            </div>
+
+            <div class="form-group">
+                <label for="inputDate">Date de retrait souhaitée</label>
+                <input type="date" id="inputDate">
+            </div>
+
+            <div class="form-group">
+                <label for="inputDuree">Durée d'emprunt</label>
+                <select id="inputDuree">
+                    <option value="7">7 jours</option>
+                    <option value="14">14 jours</option>
+                    <option value="30">1 mois</option>
+                </select>
+            </div>
+
+            <button class="btn-confirm" onclick="confirmReservation()">Confirmer la réservation</button>
+        </div>
+
+        <!-- Succès -->
+        <div id="successView" style="display:none;" class="success-state">
+            <span class="check">✅</span>
+            <h2>Réservation confirmée !</h2>
+            <p>Votre réservation pour <strong id="successTitle"></strong> a bien été enregistrée.</p>
+            <p style="margin-top:8px">Présentez-vous à l'accueil avec votre numéro de référence :</p>
+            <div class="ref" id="successRef"></div>
+            <button class="btn-confirm" style="margin-top:20px; background:var(--gold);" onclick="closeModal()">
+                Fermer
+            </button>
+        </div>
+    </div>
+</div>
+
+<script>
+    let currentBook = '';
+
+    function openModal(title, author) {
+        currentBook = title;
+        document.getElementById('modalBookTitle').textContent = title + ' — ' + author;
+        document.getElementById('formView').style.display = 'block';
+        document.getElementById('successView').style.display = 'none';
+        // Date min = aujourd'hui
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('inputDate').min = today;
+        document.getElementById('inputDate').value = today;
+        document.getElementById('modalOverlay').classList.add('open');
+    }
+
+    function closeModal() {
+        document.getElementById('modalOverlay').classList.remove('open');
+        // Resetle formulaire 
+        setTimeout(() => {
+            document.getElementById('inputNom').value = '';
+            document.getElementById('inputTel').value = '';
+        }, 300);
+    }
+
+    function closeOnOverlay(e) {
+        if (e.target === document.getElementById('modalOverlay')) closeModal();
+    }
+
+    function confirmReservation() {
+        const nom = document.getElementById('inputNom').value.trim();
+        const tel = document.getElementById('inputTel').value.trim();
+        const date = document.getElementById('inputDate').value;
+
+        if (!nom || !tel || !date) {
+            alert('Veuillez remplir tous les champs.');
+            return;
+        }
+
+        // Génère un numéro de référence aléatoire
+        const ref = 'REF-' + Math.random().toString(36).substring(2, 8).toUpperCase();
+
+        document.getElementById('formView').style.display = 'none';
+        document.getElementById('successView').style.display = 'block';
+        document.getElementById('successTitle').textContent = currentBook;
+        document.getElementById('successRef').textContent = ref;
+    }
+</script>
+
+</body>
+</html>

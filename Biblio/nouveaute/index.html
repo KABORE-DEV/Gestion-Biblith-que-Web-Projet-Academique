@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Page d'acceuil</title>
+</head>
+<nav class="menu">
+    <ul>
+        <li class="home">Logo</li>
+        <li class="home"><a href="../accueil/" class="a1">Accueil</a></li>
+        <li class="home"><a href="../catalogue/" class="a2">Catalogue</a></li>
+        <li class="home"><a href="./" class="a3">Nouveauté</a></li>
+    </ul>
+</nav>
+
+<body>
+    <marquee behavior="" direction="right"> Nous sommes ouvert du Lundi au Vendredi de 08h à 19h
+        et le Samedi de 08h à 13h
+    </marquee>
+
+
+<section class="hero">
+    <h2>Découvrez nos <em>Nouveautés</em></h2>
+    <p>Événements et dernières acquisitions de votre bibliothèque</p>
+</section>    
+
+<section class="section-events">
+    <h2 class="section-title">Événements de la Bibliothèque</h2>
+    <p class="section-subtitle">Rejoignez-nous pour des moments conviviaux et enrichissants</p>
+
+    <div class="events-grid">
+        <!-- Événement 1 -->
+        <div class="event-card">
+            <div class="event-date">
+                <span class="day">15</span>
+                <span class="month">AVR</span>
+            </div>
+            <div class="event-content">
+                <h3 class="event-title">Tournoi d'Échecs</h3>
+                <p class="event-description">Un grand tournoi d'échecs ouvert à tous les niveaux. Participez et gagnez des prix exceptionnels !</p>
+                <div class="event-details">
+                    <span class="event-time">⏰ 14h00 - 18h00</span>
+                    <span class="event-location">📍 Salle principale</span>
+                </div>
+                <button class="btn-event">S'inscrire</button>
+            </div>
+        </div>
+
+        <!-- Événement 2 -->
+        <div class="event-card">
+            <div class="event-date">
+                <span class="day">22</span>
+                <span class="month">AVR</span>
+            </div>
+            <div class="event-content">
+                <h3 class="event-title">Tournoi de Dames</h3>
+                <p class="event-description">Venez affronter les meilleurs joueurs de dames de la région. Ambiance garantie !</p>
+                <div class="event-details">
+                    <span class="event-time">⏰ 15h00 - 19h00</span>
+                    <span class="event-location">📍 Salle de jeux</span>
+                </div>
+                <button class="btn-event">S'inscrire</button>
+            </div>
+        </div>
+
+        <!-- Événement 3 -->
+        <div class="event-card">
+            <div class="event-date">
+                <span class="day">29</span>
+                <span class="month">AVR</span>
+            </div>
+            <div class="event-content">
+                <h3 class="event-title">Rencontre littéraire</h3>
+                <p class="event-description">Échanges avec des auteurs africains contemporains. Dédicaces et discussions passionnantes.</p>
+                <div class="event-details">
+                    <span class="event-time">⏰ 18h00 - 20h00</span>
+                    <span class="event-location">📍 Auditorium</span>
+                </div>
+                <button class="btn-event">S'inscrire</button>
+            </div>
+        </div>
+
+        <!-- Événement 4 -->
+        <div class="event-card">
+            <div class="event-date">
+                <span class="day">08</span>
+                <span class="month">MAI</span>
+            </div>
+            <div class="event-content">
+                <h3 class="event-title">Atelier de Lecture</h3>
+                <p class="event-description">Des ateliers gratuits pour découvrir la lecture en famille. Activités pour enfants et adultes.</p>
+                <div class="event-details">
+                    <span class="event-time">⏰ 10h00 - 12h00</span>
+                    <span class="event-location">📍 Espace jeunesse</span>
+                </div>
+                <button class="btn-event">S'inscrire</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION NOUVEAUX LIVRES -->
+<section class="section-books">
+    <h2 class="section-title">Dernières Acquisitions</h2>
+    <p class="section-subtitle">Explorez nos nouveaux ouvrages fraîchement arrivés à la bibliothèque</p>
+
+    <div class="books-grid">
+        <!-- Livre 1 -->
+        <div class="book-card">
+            <div class="book-cover-placeholder"></div>
+            <div class="book-info">
+                <span class="book-category">Littérature</span>
+                <h3 class="book-title">Le Parachutage</h3>
+                <p class="book-author">par Norbert Zongo</p>
+                <p class="book-desc">Un roman captivant sur la société burkinabé, mêlant humour et critique sociale dans un village traditionnel.</p>
+                <div class="book-badge new">Nouveau</div>
+                <button class="btn-reserve" onclick="openModal('Le Parachutage', 'Norbert Zongo')">Réserver</button>
+            </div>
+        </div>
+
+        <!-- Livre 2 -->
+        <div class="book-card">
+            <div class="book-cover-placeholder"></div>
+            <div class="book-info">
+                <span class="book-category">Poésie</span>
+                <h3 class="book-title">La Poésie des Saisons</h3>
+                <p class="book-author">par Titinga Frédéric Pacéré</p>
+                <p class="book-desc">Recueil de poèmes célébrant la beauté de la nature et la sagesse africaine à travers les saisons.</p>
+                <div class="book-badge new">Nouveau</div>
+                <button class="btn-reserve" onclick="openModal('La Poésie des Saisons', 'Titinga Frédéric Pacéré')">Réserver</button>
+            </div>
+        </div>
+
+        <!-- Livre 3 -->
+        <div class="book-card">
+            <div class="book-cover-placeholder"></div>
+            <div class="book-info">
+                <span class="book-category">Roman</span>
+                <h3 class="book-title">Crépuscule des Temps Anciens</h3>
+                <p class="book-author">par Nazi Boni</p>
+                <p class="book-desc">Une saga familiale épique racontant l'histoire d'une lignée burkinabé face aux changements du XXe siècle.</p>
+                <div class="book-badge new">Nouveau</div>
+                <button class="btn-reserve" onclick="openModal('Crépuscule des Temps Anciens', 'Nazi Boni')">Réserver</button>
+            </div>
+        </div>
+
+        <!-- Livre 4 -->
+        <div class="book-card">
+            <div class="book-cover-placeholder"></div>
+            <div class="book-info">
+                <span class="book-category">Conte</span>
+                <h3 class="book-title">Légendes du Burkina</h3>
+                <p class="book-author">par Roger Nikiema</p>
+                <p class="book-desc">Recueil de contes traditionnels burkinabés, gardant vivante la mémoire orale du pays des Hommes intègres.</p>
+                <div class="book-badge new">Nouveau</div>
+                <button class="btn-reserve" onclick="openModal('Légends du Burkina', 'Roger Nikiema')">Réserver</button>
+            </div>
+        </div>
+
+        <!-- Livre 5 - Manga -->
+        <div class="book-card">
+            <div class="book-cover-placeholder"></div>
+            <div class="book-info">
+                <span class="book-category">Manga</span>
+                <h3 class="book-title">One Piece - Tome 105</h3>
+                <p class="book-author">par Eiichiro Oda</p>
+                <p class="book-desc">Les aventures épiques de Luffy et son équipage dans leur quête du trésor ultime sur les mers.</p>
+                <div class="book-badge new">Nouveau</div>
+                <button class="btn-reserve" onclick="openModal('One Piece - Tome 105', 'Eiichiro Oda')">Réserver</button>
+            </div>
+        </div>
+
+        <!-- Livre 6 -->
+        <div class="book-card">
+            <div class="book-cover-placeholder"></div>
+            <div class="book-info">
+                <span class="book-category">Jeunesse</span>
+                <h3 class="book-title">Le Petit Griot du Faso</h3>
+                <p class="book-author">par Bernadette Dao</p>
+                <p class="book-desc">L'histoire d'un jeune garçon passionné par les contes traditionnels qui découvre sa vocation de griot moderne.</p>
+                <div class="book-badge new">Nouveau</div>
+                <button class="btn-reserve" onclick="openModal('Le Petit Griot du Faso', 'Bernadette Dao')">Réserver</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="modal-overlay" id="modalOverlay" onclick="closeOnOverlay(event)">
+    <div class="modal" id="modalBox">
+        <button class="modal-close" onclick="closeModal()">✕</button>
+
+        <!-- Formulaire -->
+        <div id="formView">
+            <div class="modal-icon">icone de livre</div>
+            <h2>Réserver un livre</h2>
+            <div class="modal-book-title" id="modalBookTitle">—</div>
+
+            <div class="form-group">
+                <label for="inputNom">Votre nom complet</label>
+                <input type="text" id="inputNom" placeholder="Ex : Aminata Koné">
+            </div>
+
+            <div class="form-group">
+                <label for="inputTel">Téléphone</label>
+                <input type="tel" id="inputTel" placeholder="+226 XX XX XX XX">
+            </div>
+
+            <div class="form-group">
+                <label for="inputDate">Date de retrait souhaitée</label>
+                <input type="date" id="inputDate">
+            </div>
+
+            <div class="form-group">
+                <label for="inputDuree">Durée d'emprunt</label>
+                <select id="inputDuree">
+                    <option value="7">7 jours</option>
+                    <option value="14">14 jours</option>
+                    <option value="30">1 mois</option>
+                </select>
+            </div>
+
+            <button class="btn-confirm" onclick="confirmReservation()">Confirmer la réservation</button>
+        </div>
+
+        <!-- Succès -->
+        <div id="successView" style="display:none;" class="success-state">
+            <span class="check">✅</span>
+            <h2>Réservation confirmée !</h2>
+            <p>Votre réservation pour <strong id="successTitle"></strong> a bien été enregistrée.</p>
+            <p style="margin-top:8px">Présentez-vous à l'accueil avec votre numéro de référence :</p>
+            <div class="ref" id="successRef"></div>
+            <button class="btn-confirm" style="margin-top:20px; background:var(--gold);" onclick="closeModal()">
+                Fermer
+            </button>
+        </div>
+    </div>
+</div>
+
+
+
+
+<footer>
+    <nav class="menu_fin">
+        <p>Date de création de la bibliothèque 13 Février 2002 &copy; copyright 
+            mise à jour 2026 Bibliothèque_Libris— Tous droits réservés
+        </p>
+    </nav>
+</footer>
+
+</body>
+</html>

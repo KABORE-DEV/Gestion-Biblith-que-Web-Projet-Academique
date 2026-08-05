@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stratégie et pouvoir — Livres</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a class="logo" href="../../catalogue/">Biblio<span>Libris</span></a>
+        <a class="back-btn" href="../../catalogue/">Retour aux catégories</a>
+    </header>
+
+    <div class="breadcrumb">
+        <a href="../../catalogue/">Accueil</a> |<strong>Statégie et Pouvoir</strong>
+    </div>
+
+    <section class="banner">
+        <h1>Stratégie et <em>Pouvoir</em></h1>
+        <p>Explorez de magnifiques œuvres sur le fonctionnement de la vie en société et les mécanismes du pouvoir</p>
+        <div class="book-count">10 livres disponibles</div>
+    </section>
+
+    <div class="section-label">Tous les livres</div>
+
+    <div class="books-grid">
+
+        <div class="book-card">
+
+            <img class="book-cover" src="../../assets/images/les 48 lois du pouvoir.jpg" alt="Couverture des 48 lois du pouvoir"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="cover-placeholder" style="display:none;"><small>Couverture</small></div>
+
+            <div class="book-info">
+                <div class="book-title">Les 48 lois du pouvoir</div>
+                <div class="book-author">par Robert Greene</div>
+                <div class="book-desc">Apprenez les règles te maitrisez le jeu du pouvoir. Influencez et Dominez dans tous les aspects de la vie socale et professionnelle</div>
+                <div class="book-status dispo">Disponible</div>
+                <button class="btn-reserve" onclick="openModal('Les 48 lois du pouvoir', 'Robert Greene')">
+                    Réserver
+                </button>
+            </div>
+        </div>
+
+
+        <div class="book-card">
+            <img class="book-cover" src="../../assets/images/le prince.jpg" alt="Couverture de Machiavel le prince"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="cover-placeholder" style="display:none;"><small>Couverture</small></div>
+
+            <div class="book-info">
+                <div class="book-title">Le Prince</div>
+                <div class="book-author">par Nicolas Machiavel</div>
+                <div class="book-desc">Machiavel nous montre comment conquérir et maintenir un pouvoir dans le temps</div>
+                <div class="book-status dispo">Disponible</div>
+                <button class="btn-reserve"
+                    onclick="openModal('Le Prince', 'Nicolas Machiavel')">
+                    Réserver
+                </button>
+            </div>
+        </div>
+
+
+        <div class="book-card">
+            <img class="book-cover" src="../../assets/images/art of war.webp" alt="Couverture de art of war"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="cover-placeholder" style="display:none;"><small>Couverture</small></div>
+
+            <div class="book-info">
+                <div class="book-title">L'art de la Guerre</div>
+                <div class="book-author">par Sun Tzu</div>
+                <div class="book-desc">Gagner une guerre sans se battre, utiliser l'énnemi à son avantage et préparer chaque action avec précision</div>
+                <div class="book-status dispo">Disponible</div>
+                <button class="btn-reserve" onclick="openModal('L\'art de la guerre', 'Sun Tzu')">
+                    Réserver
+                </button>
+            </div>
+        </div>
+
+        <div class="book-card">
+            <img class="book-cover" src="../../assets/images/art of seduction.jpg" alt="Couverture seduction art"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="cover-placeholder" style="display:none;"><small>Couverture</small></div>
+
+            <div class="book-info">
+                <div class="book-title">L'art de la Séduction</div>
+                <div class="book-author">par Robert Greene</div>
+                <div class="book-desc">Une panoplie de techniques pour séduire manipuler et convaincre dans la société comme dans le domaine professionnel</div>
+                <div class="book-status dispo">Disponible</div>
+                <button class="btn-reserve" onclick="openModal('L\'art de la séduction', 'Robert Greene')">Réserver</button>
+            </div>
+        </div>
+
+
+        <div class="book-card">
+            <img class="book-cover" src="../../assets/images/les lois de la nature humaine.jpg" alt="Couverture des lois de la nature humaine"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="cover-placeholder" style="display:none;"><small>Couverture</small></div>
+
+            <div class="book-info">
+                <div class="book-title">Les Lois de la Nature Humaine</div>
+                <div class="book-author">par Robert Greene</div>
+                <div class="book-desc">Décryptage des intentions cachées, des comportements et des instincts pour cerner anticiper et influencer l'humain en général</div>
+                <div class="book-status dispo">Disponible</div>
+                <button class="btn-reserve" onclick="openModal('Les lois de la nature humaine', 'Robert Greene')">
+                    Réserver
+                </button>
+            </div>
+        </div>
+
+
+        <div class="book-card">
+            <img class="book-cover" src="../../assets/images/influence et manipulation.jpg" alt="Couverture de influence et manipulation"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="cover-placeholder" style="display:none;"><small>Couverture</small></div>
+
+            <div class="book-info">
+                <div class="book-title">Influence et Manipulation</div>
+                <div class="book-author">par Robert Cialdini</div>
+                <div class="book-desc">Les Secrets Scientifiques de la persuasion. Comment les utiliser et s'en protéger</div>
+                <div class="book-status dispo">Disponible</div>
+                <button class="btn-reserve" onclick="openModal('Influence et manipulation', 'Robert Cinaldini')">
+                    Réserver
+                </button>
+            </div>
+        </div>
+        <div class="book-card">
+            <img class="book-cover" src="les 33 stratégies de la guerre.jpg" alt="Couverture des 33 stratégies de la guerre"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="cover-placeholder" style="display:none;"><small>Couverture</small></div>
+
+            <div class="book-info">
+                <div class="book-title">Les 33 Startégies de le Guerre</div>
+                <div class="book-author">par Robert Greene</div>
+                <div class="book-desc">Techniques stratégiques pour vaincre les conflits sociaux, professionnels et Politiques</div>
+                <div class="book-status dispo">Disponible</div>
+                <button class="btn-reserve" onclick="openModal('Les 33 stratégies de la guerre', 'Robert Greene')">
+                    Réserver
+                </button>
+            </div>
+        </div>
+        <div class="book-card">
+            <img class="book-cover" src="../../assets/images/good or bad strategy.jpg" alt="Couverture de good or bad strategy"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="cover-placeholder" style="display:none;"><small>Couverture</small></div>
+
+            <div class="book-info">
+                <div class="book-title">Good Strategy/Bad Strategy</div>
+                <div class="book-author">par Richard Rumelt</div>
+                <div class="book-desc">Pour le business et autres situasions complexes, une stratégie claire, efficace et implacable. Démontrer la différence entre une vraie stratégie et un plan flou</div>
+                <div class="book-status dispo">Disponible</div>
+                <button class="btn-reserve" onclick="openModal('Good Strategy/Bad Strategy', 'Richard Rumelt')">
+                    Réserver
+                </button>
+            </div>
+        </div>
+        <div class="book-card">
+            <img class="book-cover" src="../../assets/images/power.jpg" alt="Couverture de power"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="cover-placeholder" style="display:none;"><small>Couverture</small></div>
+
+            <div class="book-info">
+                <div class="book-title">Power</div>
+                <div class="book-author">par Bertrand Russell</div>
+                <div class="book-desc">Analyse des forces gouvernant le monde. Comment s'exerce le pouvoir dans la société la politique et les interractions humaines avec lucidité et recul</div>
+                <div class="book-status dispo">Disponible</div>
+                <button class="btn-reserve" onclick="openModal('Power', 'Bertand Russell')">
+                    Réserver
+                </button>
+            </div>
+        </div>
+        <div class="book-card">
+            <img class="book-cover" src="../../assets/images/la 50e loi.jpg" alt="Couverture la 50e loi"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="cover-placeholder" style="display:none;"><small>Couverture</small></div>
+
+            <div class="book-info">
+                <div class="book-title">The 50th Law</div>
+                <div class="book-author">par Robert Greene et 50 Cent Jackson</div>
+                <div class="book-desc">La peur n'existe pas pour celui qui maitrise le pouvoir. relate une expéreience réelle basée sur la carière de 50 Cent Curtis Jackson(Artiste-chanteur, acteur et producteur Américain)</div>
+                <div class="book-status dispo">Disponible</div>
+                <button class="btn-reserve" onclick="openModal('The 50th Law', 'Robert Greene and 50 cent Jackson')">
+                    Réserver
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2025 BiblioAfrique — Tous droits réservés
+    </footer>
+
+
+    <div class="modal-overlay" id="modalOverlay" onclick="closeOnOverlay(event)">
+        <div class="modal" id="modalBox">
+            <button class="modal-close" onclick="closeModal()">✕</button>
+
+            <!-- Formulaire -->
+            <div id="formView">
+                <div class="modal-icon">icone de livre</div>
+                <h2>Réserver un livre</h2>
+                <div class="modal-book-title" id="modalBookTitle">—</div>
+
+                <div class="form-group">
+                    <label for="inputNom">Votre nom complet</label>
+                    <input type="text" id="inputNom" placeholder="Ex : Aminata Koné">
+                </div>
+
+                <div class="form-group">
+                    <label for="inputTel">Téléphone</label>
+                    <input type="tel" id="inputTel" placeholder="+226 XX XX XX XX">
+                </div>
+
+                <div class="form-group">
+                    <label for="inputDate">Date de retrait souhaitée</label>
+                    <input type="date" id="inputDate">
+                </div>
+
+                <div class="form-group">
+                    <label for="inputDuree">Durée d'emprunt</label>
+                    <select id="inputDuree">
+                        <option value="7">7 jours</option>
+                        <option value="14">14 jours</option>
+                        <option value="30">1 mois</option>
+                    </select>
+                </div>
+
+                <button class="btn-confirm" onclick="confirmReservation()">Confirmer la réservation</button>
+            </div>
+
+            <!-- Succès -->
+            <div id="successView" style="display:none;" class="success-state">
+                <span class="check">✅</span>
+                <h2>Réservation confirmée !</h2>
+                <p>Votre réservation pour <strong id="successTitle"></strong> a bien été enregistrée.</p>
+                <p style="margin-top:8px">Présentez-vous à l'accueil avec votre numéro de référence :</p>
+                <div class="ref" id="successRef"></div>
+                <button class="btn-confirm" style="margin-top:20px; background:var(--gold);" onclick="closeModal()">
+                    Fermer
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentBook = '';
+
+        function openModal(title, author) {
+            currentBook = title;
+            document.getElementById('modalBookTitle').textContent = title + ' — ' + author;
+            document.getElementById('formView').style.display = 'block';
+            document.getElementById('successView').style.display = 'none';
+            // Date min = aujourd'hui
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('inputDate').min = today;
+            document.getElementById('inputDate').value = today;
+            document.getElementById('modalOverlay').classList.add('open');
+        }
+
+        function closeModal() {
+            document.getElementById('modalOverlay').classList.remove('open');
+            // Resetle formulaire 
+            setTimeout(() => {
+                document.getElementById('inputNom').value = '';
+                document.getElementById('inputTel').value = '';
+            }, 300);
+        }
+
+        function closeOnOverlay(e) {
+            if (e.target === document.getElementById('modalOverlay')) closeModal();
+        }
+
+        function confirmReservation() {
+            const nom = document.getElementById('inputNom').value.trim();
+            const tel = document.getElementById('inputTel').value.trim();
+            const date = document.getElementById('inputDate').value;
+
+            if (!nom || !tel || !date) {
+                alert('Veuillez remplir tous les champs.');
+                return;
+            }
+
+            // Génère un numéro de référence aléatoire
+            const ref = 'REF-' + Math.random().toString(36).substring(2, 8).toUpperCase();
+
+            document.getElementById('formView').style.display = 'none';
+            document.getElementById('successView').style.display = 'block';
+            document.getElementById('successTitle').textContent = currentBook;
+            document.getElementById('successRef').textContent = ref;
+        }
+    </script>
+
+</body>
+
+</html>

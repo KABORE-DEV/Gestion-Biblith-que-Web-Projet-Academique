@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandes Dessinées — Livres</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+
+<header>
+    <a class="logo" href="../../catalogue/">Biblio<span>Libris</span></a>
+    <a class="back-btn" href="../../catalogue/">Retour aux catégories</a>
+</header>
+
+<div class="breadcrumb">
+    <a href="../../catalogue/">Accueil</a> |<strong>Bandes Dessinées et Mangas</strong>
+</div>
+
+<section class="banner">
+    <h1>Bandes <em>Dessinées</em></h1>
+    <p>Plongez dans l'univers fascinant des bandes dessinées et mangas, où l'imagination prend vie à travers des histoires épiques et des personnages inoubliables.</p>
+    <div class="book-count">6 livres disponibles</div>
+</section>
+
+<div class="section-label">Tous les livres</div>
+
+<div class="books-grid">
+
+    <div class="book-card">
+
+        <img class="book-cover" src="L'Île Noire — Tintin_com.jpeg" alt="Couverture de Tintin"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="cover-placeholder" style="display:none;"><small>Couverture</small></div>
+
+        <div class="book-info">
+            <div class="book-title">Tintin-L'Île Noire</div>
+            <div class="book-author">par Hergé</div>
+            <div class="book-desc">Les aventures du jeune reporter Tintin et de son chien Milou dans des histoires pleines de mystère et d'aventure.</div>
+            <div class="book-status dispo">Disponible</div>
+            <button class="btn-reserve"
+                onclick="openModal('Tintin', 'Hergé')">
+                Réserver
+            </button>
+        </div>
+    </div>
+
+    <div class="book-card">
+        <img class="book-cover" src="../../assets/images/The Dark Knight Returns .jpeg" alt="Couverture de The Dark Knight Returns"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="cover-placeholder" style="display:none;"><small>Couverture</small></div>
+
+        <div class="book-info">
+            <div class="book-title">The Dark Knight Returns</div>
+            <div class="book-author">par Frank Miller</div>
+            <div class="book-desc">Batman revient pour affronter le crime dans une Gotham dystopique, un classique du genre.</div>
+            <div class="book-status dispo">Disponible</div>
+            <button class="btn-reserve"
+                onclick="openModal('The Dark Knight Returns', 'Frank Miller')">
+                Réserver
+            </button>
+        </div>
+    </div>
+
+
+    <div class="book-card">
+        <img class="book-cover" src="../../assets/images/Naruto.jpeg" alt="Couverture de Naruto"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="cover-placeholder" style="display:none;"><small>Couverture</small></div>
+
+        <div class="book-info">
+            <div class="book-title">Naruto</div>
+            <div class="book-author">par Masashi Kishimoto</div>
+            <div class="book-desc">L'épopée d'un jeune ninja déterminé à devenir le plus grand Hokage, pleine d'aventures et de combats.</div>
+            <div class="book-status dispo">Disponible</div>
+            <button class="btn-reserve"
+                onclick="openModal('Naruto', 'Masashi Kishimoto')">
+                Réserver
+            </button>
+        </div>
+    </div>
+
+    <div class="book-card">
+        <img class="book-cover" src="../../assets/images/One Piece.jpeg" alt="Couverture de One Piece"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="cover-placeholder" style="display:none;"><small>Couverture</small></div>
+
+        <div class="book-info">
+            <div class="book-title">One Piece</div>
+            <div class="book-author">par Eiichiro Oda</div>
+            <div class="book-desc">Suivez Luffy et son équipage de pirates dans une quête pour le trésor ultime, avec des thèmes d'amitié et de liberté.</div>
+            <div class="book-status dispo">Disponible</div>
+            <button class="btn-reserve" onclick="openModal('One Piece', 'Eiichiro Oda')">Réserver</button>
+        </div>
+    </div>
+
+
+    <div class="book-card">
+        <img class="book-cover" src="../../assets/images/Death Note.jpeg" alt="Couverture de Death Note"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="cover-placeholder" style="display:none;"><small>Couverture</small></div>
+
+        <div class="book-info">
+            <div class="book-title">Death Note</div>
+            <div class="book-author">par Tsugumi Ohba et Takeshi Obata</div>
+            <div class="book-desc">Un étudiant découvre un cahier qui lui permet de tuer quiconque en écrivant son nom, menant à une bataille psychologique.</div>
+            <div class="book-status dispo">Disponible</div>
+            <button class="btn-reserve"
+                onclick="openModal('Death Note', 'Tsugumi Ohba et Takeshi Obata')">
+                Réserver
+            </button>
+        </div>
+    </div>
+
+
+    <div class="book-card">
+        <img class="book-cover" src="../../assets/images/Picsou.jpeg" alt="Couverture de Picsou"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="cover-placeholder" style="display:none;"><small>Couverture</small></div>
+
+        <div class="book-info">
+            <div class="book-title">La jeunesse de Picsou</div>
+            <div class="book-author">par Carl Barks</div>
+            <div class="book-desc">Les aventures du célèbre canard milliardaire et de sa famille dans des trésors et des voyages incroyables.</div>
+            <div class="book-status dispo">Disponible</div>
+            <button class="btn-reserve"
+                onclick="openModal('La jeunesse de Picsou', 'Carl Barks')">
+                Réserver
+            </button>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    &copy; 2025 BiblioAfrique — Tous droits réservés
+</footer>
+
+
+<div class="modal-overlay" id="modalOverlay" onclick="closeOnOverlay(event)">
+    <div class="modal" id="modalBox">
+        <button class="modal-close" onclick="closeModal()">✕</button>
+
+        <!-- Formulaire -->
+        <div id="formView">
+            <div class="modal-icon">icone de livre</div>
+            <h2>Réserver un livre</h2>
+            <div class="modal-book-title" id="modalBookTitle">—</div>
+
+            <div class="form-group">
+                <label for="inputNom">Votre nom complet</label>
+                <input type="text" id="inputNom" placeholder="Ex : Aminata Koné">
+            </div>
+
+            <div class="form-group">
+                <label for="inputTel">Téléphone</label>
+                <input type="tel" id="inputTel" placeholder="+226 XX XX XX XX">
+            </div>
+
+            <div class="form-group">
+                <label for="inputDate">Date de retrait souhaitée</label>
+                <input type="date" id="inputDate">
+            </div>
+
+            <div class="form-group">
+                <label for="inputDuree">Durée d'emprunt</label>
+                <select id="inputDuree">
+                    <option value="7">7 jours</option>
+                    <option value="14">14 jours</option>
+                    <option value="30">1 mois</option>
+                </select>
+            </div>
+
+            <button class="btn-confirm" onclick="confirmReservation()">Confirmer la réservation</button>
+        </div>
+
+        <!-- Succès -->
+        <div id="successView" style="display:none;" class="success-state">
+            <span class="check">✅</span>
+            <h2>Réservation confirmée !</h2>
+            <p>Votre réservation pour <strong id="successTitle"></strong> a bien été enregistrée.</p>
+            <p style="margin-top:8px">Présentez-vous à l'accueil avec votre numéro de référence :</p>
+            <div class="ref" id="successRef"></div>
+            <button class="btn-confirm" style="margin-top:20px; background:var(--gold);" onclick="closeModal()">
+                Fermer
+            </button>
+        </div>
+    </div>
+</div>
+
+<script>
+    let currentBook = '';
+
+    function openModal(title, author) {
+        currentBook = title;
+        document.getElementById('modalBookTitle').textContent = title + ' — ' + author;
+        document.getElementById('formView').style.display = 'block';
+        document.getElementById('successView').style.display = 'none';
+        // Date min = aujourd'hui
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('inputDate').min = today;
+        document.getElementById('inputDate').value = today;
+        document.getElementById('modalOverlay').classList.add('open');
+    }
+
+    function closeModal() {
+        document.getElementById('modalOverlay').classList.remove('open');
+        // Resetle formulaire 
+        setTimeout(() => {
+            document.getElementById('inputNom').value = '';
+            document.getElementById('inputTel').value = '';
+        }, 300);
+    }
+
+    function closeOnOverlay(e) {
+        if (e.target === document.getElementById('modalOverlay')) closeModal();
+    }
+
+    function confirmReservation() {
+        const nom = document.getElementById('inputNom').value.trim();
+        const tel = document.getElementById('inputTel').value.trim();
+        const date = document.getElementById('inputDate').value;
+
+        if (!nom || !tel || !date) {
+            alert('Veuillez remplir tous les champs.');
+            return;
+        }
+
+        // Génère un numéro de référence aléatoire
+        const ref = 'REF-' + Math.random().toString(36).substring(2, 8).toUpperCase();
+
+        document.getElementById('formView').style.display = 'none';
+        document.getElementById('successView').style.display = 'block';
+        document.getElementById('successTitle').textContent = currentBook;
+        document.getElementById('successRef').textContent = ref;
+    }
+</script>
+
+</body>
+</html>
