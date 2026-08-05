@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherche — Bibliothèque Libris</title>
+    <meta name="description" content="Recherchez un livre ou un auteur dans le catalogue de la bibliothèque Libris.">
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body data-page="recherche" data-depth="1">
+
+    <header class="search-hero">
+        <h1>Rechercher un <em>livre</em></h1>
+        <p>Parcourez l'ensemble du catalogue de la bibliothèque par titre, auteur ou catégorie.</p>
+
+        <form id="searchForm" class="search-box">
+            <input type="search" id="searchInput" placeholder="Titre, auteur, catégorie…" aria-label="Rechercher un livre">
+            <button type="submit">Rechercher</button>
+        </form>
+    </header>
+
+    <div class="results-info" id="resultsInfo"></div>
+    <div class="results-grid" id="resultsGrid"></div>
+
+    <div class="modal-overlay" id="modalOverlay" onclick="closeOnOverlay(event)">
+        <div class="modal" id="modalBox">
+            <button class="modal-close" onclick="closeModal()">&#10005;</button>
+            <div id="formView">
+                <div class="modal-icon"><i class="fa-solid fa-book-open"></i></div>
+                <h2>Réserver un livre</h2>
+                <div class="modal-book-title" id="modalBookTitle">&mdash;</div>
+                <div class="form-group"><label for="inputNom">Votre nom complet</label>
+                    <input type="text" id="inputNom" placeholder="Ex : Aminata Koné"></div>
+                <div class="form-group"><label for="inputTel">Téléphone</label>
+                    <input type="tel" id="inputTel" placeholder="+226 XX XX XX XX"></div>
+                <div class="form-group"><label for="inputDate">Date de retrait souhaitée</label>
+                    <input type="date" id="inputDate"></div>
+                <div class="form-group"><label for="inputDuree">Durée d'emprunt</label>
+                    <select id="inputDuree">
+                        <option value="7">7 jours</option>
+                        <option value="14">14 jours</option>
+                        <option value="30">1 mois</option>
+                    </select></div>
+                <button class="btn-confirm" onclick="confirmReservation()">Confirmer la réservation</button>
+            </div>
+            <div id="successView" style="display:none;" class="success-state">
+                <span class="check"><i class="fa-solid fa-circle-check"></i></span>
+                <h2>Réservation confirmée !</h2>
+                <p>Votre réservation pour <strong id="successTitle"></strong> a bien été enregistrée.</p>
+                <p>Présentez-vous à l'accueil avec votre numéro de référence :</p>
+                <div class="ref" id="successRef"></div>
+                <button class="btn-confirm" style="margin-top:20px; background:var(--accent);" onclick="closeModal()">Fermer</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/navbar.js"></script>
+    <script src="../assets/js/data.js"></script>
+    <script src="../assets/js/search-global.js"></script>
+    <script src="../assets/js/reservation.js"></script>
+</body>
+
+</html>

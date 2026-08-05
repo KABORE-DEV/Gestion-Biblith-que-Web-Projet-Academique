@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pagr de connexion</title>
+    <title>Connexion — Bibliothèque Libris</title>
+    <meta name="description" content="Connectez-vous à votre compte Bibliothèque Libris.">
+    <link rel="icon" type="image/svg+xml" href="../../assets/images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
-<body>
-    <div class="un">
+<body class="auth-page" data-page="connexion" data-depth="2">
+
+    <div class="auth-card">
+        <a class="auth-logo" href="../../">Libris<span>.</span></a>
+        <h1>Bon retour parmi nous</h1>
+        <p class="auth-sub">Connectez-vous pour réserver vos ouvrages.</p>
+
         <form action="" id="connexion">
-            <h1>Login</h1>
-            <div class="input_box">
-                <input type="text" name="" placeholder="email" id="email" required>
-                <i class="i_classe"></i>
+            <div class="form-group">
+                <label for="email">Adresse email</label>
+                <input type="email" id="email" placeholder="vous@exemple.com" required>
             </div>
-            <div class="input_box">
-                <input type="password" name="" id="password" placeholder="Password" required>
-                <i class="i_cl_passwd"></i>
+            <div class="form-group">
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password" placeholder="••••••••" required>
             </div>
-            <div class="souvenir">
-                <label for=""><input type="checkbox" name="" id="">remenber me</label>
-                <a href="#">forgot password</a>
-            </div>
-            <button type="submit" class="btn" id="button">login</button>
-            <div class="enregistrement">
-                <p>don't have an account? <a href="../inscription/">register</a></p>
-            </div>
+            <button type="submit" class="auth-submit">Se connecter</button>
         </form>
+
+        <p class="auth-switch">Pas encore de compte ? <a href="../inscription/">Créer un compte</a></p>
     </div>
-     <!-- <script src="connexion.js"></script> -->
-    <script src="../../assets/js/connexion_js.js"></script>
+
+    <script src="../../assets/js/navbar.js"></script>
+    <script src="../../assets/js/auth.js"></script>
 </body>
 </html>

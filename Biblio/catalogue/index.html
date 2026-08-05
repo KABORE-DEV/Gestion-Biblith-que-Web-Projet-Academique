@@ -1,137 +1,37 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <title>Catalogue</title>
+    <title>Catalogue — Bibliothèque Libris</title>
+    <meta name="description" content="Explorez le catalogue de la bibliothèque Libris, classé par catégories.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-<nav class="menu">
-    <ul>
-        <li class="home">Logo</li>
-        <li>
-            <div class="search">
-                <input type="text" placeholder="Rechercher..." class="recher">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-        </li>
-        <li class="home"><a href="../accueil/" class="a1">Accueil</a></li>
-        <li class="home"><a href="./" class="a2">Catalogue</a></li>
-        <li class="home"><a href="../nouveaute/" class="a3">Nouveauté</a></li>
-    </ul>
-</nav>
 
-<body>
-    <marquee behavior="" direction="right"> Nous sommes ouvert du Lundi au Vendredi de 08h à 19h
-        et le Samedi de 08h à 13h
-    </marquee>
-    
+<body data-page="catalogue" data-depth="1" data-disposition="cards">
 
-    <section class="hero">
-    <h2>Explorez notre <em>Catalogue</em></h2>
-    <p>Découvrez des centaines d'ouvrages classés par catégories</p>
+    <header class="page-hero">
+        <h1>Explorez notre <em>catalogue</em></h1>
+        <p>Des centaines d'ouvrages classés par catégories, pour tous les goûts.</p>
+        <div class="cat-search">
+            <input type="text" placeholder="Rechercher une catégorie..." class="recher" id="catalogueSearch">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </header>
+
+    <section class="section" style="padding-top: 40px;">
+        <div class="cat-grid" id="categoryGrid"></div>
     </section>
 
-
-    <h2 class="section-title">Nos Catégories</h2>
-
-<div class="grid">
-
-    <div class="card">
-        <div class="card-img-placeholder"></div>
-        <div class="card-body">
-            <span class="card-tag">Histoire Africaine</span>
-            <div class="card-title">Histoire Africaine</div>
-            <div class="card-sub">Civilisations, royaumes et héritages du continent</div>
-            <div class="card-footer">
-                <a class="btn-catalogue" href="../livres/histoire/">Consulter le catalogue</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-img-placeholder"></div>
-        <div class="card-body">
-            <span class="card-tag">Bande dessinée</span>
-            <div class="card-title">Bande dessinée</div>
-            <div class="card-sub">Manga japonais actuel, Bande dessinée légendaires</div>
-            <div class="card-footer">
-                <a class="btn-catalogue" href="../livres/bande-dessine/">Consulter le catalogue</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-img-placeholder"></div>
-        <div class="card-body">
-            <span class="card-tag">Art & Culture</span>
-            <div class="card-title">Art & Culture</div>
-            <div class="card-sub">Musique, traditions et expressions artistiques</div>
-            <div class="card-footer">
-                <a class="btn-catalogue" href="../livres/art-culture/">Consulter le catalogue</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-img-placeholder"></div>
-        <div class="card-body">
-            <span class="card-tag">Sciences</span>
-            <div class="card-title">Sciences</div>
-            <div class="card-sub">Innovations, recherches et découvertes</div>
-            <div class="card-footer">
-                <a class="btn-catalogue" href="../livres/sciences/">Consulter le catalogue</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-img-placeholder"></div>
-        <div class="card-body">
-            <span class="card-tag">Stratégie</span>
-            <div class="card-title">Stratégie</div>
-            <div class="card-sub">Manipulation, stratégie sociale et politique</div>
-            <div class="card-footer">
-                <a class="btn-catalogue" href="../livres/strategie/">Consulter le catalogue</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-img-placeholder"></div>
-        <div class="card-body">
-            <span class="card-tag">Politique Et Société</span>
-            <div class="card-title">Politique Et Société</div>
-            <div class="card-sub">Gouvernance, droits et mouvements sociaux</div>
-            <div class="card-footer">
-                <a class="btn-catalogue" href="../livres/politique/">Consulter le catalogue</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-img-placeholder"></div>
-        <div class="card-body">
-            <span class="card-tag">Informatique</span>
-            <div class="card-title">Informatique</div>
-            <div class="card-sub">Programmation, Robotique, Réseaux, Cybersécurité, IA</div>
-            <div class="card-footer">
-                <a class="btn-catalogue" href="../livres/informatique/">Consulter le catalogue</a>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-
-<footer>
-    <nav class="menu_fin">
-        <p>Date de création de la bibliothèque 13 Février 2002 &copy; copyright 
-            mise à jour 2026 Bibliothèque_Libris— Tous droits réservés
-        </p>
-    </nav>
-</footer>
-
+    <script src="../assets/js/navbar.js"></script>
+    <script src="../assets/js/data.js"></script>
+    <script src="../assets/js/categories.js"></script>
+    <script src="../assets/js/search.js"></script>
 </body>
+
 </html>

@@ -2,45 +2,55 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>page d'insription</title>
+    <title>Inscription — Bibliothèque Libris</title>
+    <meta name="description" content="Créez votre compte Bibliothèque Libris.">
+    <link rel="icon" type="image/svg+xml" href="../../assets/images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
-<body>
-    <div class="un">
+<body class="auth-page" data-page="inscription" data-depth="2">
+
+    <div class="auth-card">
+        <a class="auth-logo" href="../../">Libris<span>.</span></a>
+        <h1>Rejoignez Libris</h1>
+        <p class="auth-sub">Créez votre compte en quelques secondes.</p>
+
         <form action="" id="form">
-                    <h1>Sign in</h1>
-        <div class="input_box">
-            <input type="text" name="" id="nom" placeholder="firstname " required>
-            <i></i>
-        </div>
-        <div class="input_box">
-            <input type="text" name="" id="prenom" placeholder="surname" required>
-            <i></i>
-        </div>
-        <div class="input_box">
-            <input type="password" name="" id="password" placeholder="password" required>
-            <i></i>
-        </div>
-        <div class="input_box">
-            <input type="email" name="" id="email" placeholder="mail address" required><i></i>
-        </div>
-        <div class="input_box">
-            <input type="text" name="" id="adresse" placeholder="resident address" required><i></i>
-        </div>
-        <div class="input_box">
-            <input type="text" name="" id="tel_number" placeholder="tel number" required><i></i>
-        </div>
-        <div class="input_box">
-            <select name="" >
-                <option value="user" id="select">user</option>
-            </select>
-        <button type="submit" class="btne" id="button">Sign In</button>
-        </div>
+            <div class="form-group">
+                <label for="nom">Prénom</label>
+                <input type="text" id="nom" placeholder="Aminata" required>
+            </div>
+            <div class="form-group">
+                <label for="prenom">Nom</label>
+                <input type="text" id="prenom" placeholder="Koné" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Adresse email</label>
+                <input type="email" id="email" placeholder="vous@exemple.com" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password" placeholder="6 caractères minimum" required>
+            </div>
+            <div class="form-group">
+                <label for="adresse">Adresse</label>
+                <input type="text" id="adresse" placeholder="Votre adresse" required>
+            </div>
+            <div class="form-group">
+                <label for="tel_number">Téléphone</label>
+                <input type="tel" id="tel_number" placeholder="+226 XX XX XX XX" required>
+            </div>
+            <button type="submit" class="auth-submit">Créer mon compte</button>
         </form>
+
+        <p class="auth-switch">Déjà inscrit ? <a href="../connexion/">Se connecter</a></p>
     </div>
-   <!-- <script src="inscription.js"></script> -->
-    <script src="../../assets/js/js.js"></script>
+
+    <script src="../../assets/js/navbar.js"></script>
+    <script src="../../assets/js/auth.js"></script>
 </body>
 </html>

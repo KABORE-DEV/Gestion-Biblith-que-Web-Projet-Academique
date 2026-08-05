@@ -1,16 +1,92 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirection - Bibliothèque Libris</title>
-    <script>
-        // Redirection vers la page d'accueil
-        window.location.href = './accueil/';
-    </script>
+    <title>Libris — Bibliothèque au cœur de la ville</title>
+    <meta name="description" content="La bibliothèque Libris : des livres, des idées, une communauté. Explorez notre catalogue, découvrez nos nouveautés.">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-    <p>Redirection vers l'accueil...</p>
-    <p>Si vous n'êtes pas redirigé, <a href="./accueil/">cliquez ici</a>.</p>
+
+<body data-page="accueil" data-depth="0" data-disposition="index">
+
+    <header class="home-hero">
+        <span class="hero-eyebrow">Bibliothèque Libris</span>
+        <h1 class="hero-title">Là où les histoires <em>prennent vie.</em></h1>
+        <p class="hero-sub">
+            Un lieu chaleureux pour lire, explorer et échanger. Découvrez nos
+            ouvrages, participez à nos ateliers et rejoignez une communauté
+            passionnée de lecture.
+        </p>
+        <div class="hero-cta">
+            <a class="btn btn-primary" href="catalogue/">
+                <i class="fa-solid fa-book-open"></i> Explorer le catalogue
+            </a>
+            <a class="btn btn-outline" href="nouveaute/">Voir les nouveautés</a>
+        </div>
+        <div class="hero-trust">
+            <div class="stat">45+ <small>ouvrages</small></div>
+            <div class="stat">7 <small>catégories</small></div>
+            <div class="stat">6j/7 <small>ouverture</small></div>
+        </div>
+    </header>
+
+    <div class="hero-strip">
+        <img src="assets/images/medium-shot-man-reading-comics-library.jpg" alt="Un lecteur plongé dans sa lecture">
+    </div>
+
+    <section class="section">
+        <div class="section-head">
+            <span class="eyebrow">Explorer</span>
+            <h2 class="section-title">Nos <em>catégories</em></h2>
+            <p class="section-sub">Des collections soigneusement sélectionnées pour tous les goûts.</p>
+        </div>
+
+        <div class="index-list" id="categoryIndex"></div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+        <div class="section-head">
+            <span class="eyebrow">Pourquoi nous</span>
+            <h2 class="section-title">Bien plus qu'une <em>bibliothèque</em></h2>
+        </div>
+
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feat-icon"><i class="fa-solid fa-book-open"></i></div>
+                <h3>Des acquisitions fraîches</h3>
+                <p>Chaque mois, de nouveaux ouvrages rejoignent nos rayons, soigneusement choisis par notre équipe.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feat-icon"><i class="fa-solid fa-people-group"></i></div>
+                <h3>Ateliers & événements</h3>
+                <p>Tournois, rencontres littéraires et ateliers de lecture rythment la vie de la bibliothèque.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feat-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                <h3>Un accueil pour tous</h3>
+                <p>Un espace de lecture sur place, un accompagnement bienveillant et des horaires adaptés.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+        <div class="cta-band">
+            <h2>Rejoignez la communauté Libris</h2>
+            <p>Créez votre compte et réservez vos ouvrages en quelques clics.</p>
+            <a class="btn btn-accent" href="compte/inscription/">Créer mon compte</a>
+        </div>
+    </section>
+
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/categories.js"></script>
 </body>
+
 </html>
